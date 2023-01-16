@@ -3,6 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
+let htmlPageNames = ['algo', 'css'];
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HtmlWebpackPlugin({
+    template: `./src/html/${name}.html`, // relative path to the HTML files
+    filename: `${name}.html`, // output HTML files
+    chunks: [`${name}`] // respective JS files
+  })
+});
+
 module.exports = {
     entry: path.resolve(__dirname, '../src/script.js'),
     output:
@@ -21,10 +30,11 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../src/index.html'),
+            chunks : ['main'],
             minify: true
         }),
         new MiniCSSExtractPlugin()
-    ],
+    ].concat(multipleHtmlPlugins),
     module:
     {
         rules:

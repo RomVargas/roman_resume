@@ -1,0 +1,46 @@
+{
+    "type": "Map",
+    "maps": [
+        {
+            "text": "IND",
+            "size": 1.0,
+            "country": "India",
+            "city": "Chennai",
+            "lat":"13.089869",
+            "lng": "80.245901"
+        },
+        {
+            "text": "UAE",
+            "size": 1.0,
+            "country":"United Arab Emirates",
+            "city": "Dubai",
+            "lat":"23.214066",
+            "lng":"53.195262"
+
+        },
+        {
+            "text": "CDMX",
+            "size": 1.0,
+            "country": "United States of Mexico",
+            "city": "CDMX",
+            "lat": "19.42847",
+            "lng": "-99.12766"
+        },
+         {
+            "text": "L.A.",
+            "size": 1.0,
+            "country": "United States of America",
+            "city": "Los Angeles",
+            "lat": "34.052235",
+            "lng": "-118.243683"
+        },
+         {
+            "text": "Madrid",
+            "size": 1.0,
+            "country": "Spain",
+            "city": "Madrid",
+            "lat": "40.4165",
+            "lng": "-3.70256"
+        }
+    ]
+}
